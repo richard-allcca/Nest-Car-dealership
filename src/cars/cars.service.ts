@@ -62,7 +62,7 @@ export class CarsService {
     this.cars = this.cars.map((car) => {
       if (car.id === id) {
         carDb = { ...car, ...updateCarData, id };
-        return car;
+        return carDb;
       }
       return car;
     });

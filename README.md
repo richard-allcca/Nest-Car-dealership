@@ -105,3 +105,12 @@ Check out a few resources that may come in handy when working with NestJS:
 - Seguir el principio DRY (Don't repeat yourself)
 
 - Algunos decoradores del Class Validator útiles
+
+## Comandos CLI para crear nuevo CRUD
+
+```bash
+  nest g resource name --no-spec
+
+  # What transport layer would you like to use? - REST API
+  # Would you like to generate CRUD entry points? - yes
+```
