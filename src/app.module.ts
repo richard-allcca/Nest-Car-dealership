@@ -3,9 +3,10 @@ import { Module } from '@nestjs/common';
 // import { AppService } from './app.service';
 import { CarsModule } from './cars/cars.module';
 import { BrandModule } from './brand/brand.module';
+import { SeedModule } from './seed/seed.module';
 
 @Module({
-  imports: [CarsModule, BrandModule],
+  imports: [CarsModule, BrandModule, SeedModule],
   controllers: [],
   providers: [],
   exports: [],

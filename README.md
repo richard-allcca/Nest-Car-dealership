@@ -4,42 +4,38 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Creation
+## Project starter
 
-```bash
-  nest new project_name
-```
+This project is a starter template for building a RESTful API using NestJS. It includes basic CRUD operations and demonstrates how to set up controllers, services, and modules.
+It also showcases how to use decorators, dependency injection, and validation with DTOs (Data Transfer Objects).
+It is designed to be a starting point for building more complex applications, following best practices and the DRY (Don't Repeat Yourself) principle.
 
-## Project setup
+## Installation
 
 ```bash
 npm install
 ```
 
-## Compile and run the project
+## Running the app
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+# Development mode
+npm run start:dev
+# Watch mode
+npm run start:dev:watch
+# Production mode
+npm run start:prod
 ```
 
-## Run tests
+## Inicializar la base de datos
+
+Para inicializar la base de datos, debes hacer un GET a la ruta `/seed` de tu API. Esto se puede hacer utilizando herramientas como Postman o cURL, o simplemente accediendo a la URL en tu navegador.
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+# Usando cURL
+curl -X GET http://localhost:3000/seed
+# Usando Postman
+# Abre Postman y crea una nueva solicitud GET a http://localhost:3000/seed
 ```
 
 ## Comandos para generar

@@ -5,5 +5,6 @@ import { BrandController } from './brand.controller';
 @Module({
   controllers: [BrandController],
   providers: [BrandService],
+  exports: [BrandService], // Exporting BrandService to be used in other modules
 })
 export class BrandModule {}

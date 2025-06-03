@@ -7,24 +7,24 @@ import { v4 as uuid } from 'uuid';
 @Injectable()
 export class BrandService {
   private brands: Brand[] = [
-    {
-      id: uuid(),
-      name: 'Brand A',
-      createdAt: Date.now(),
-      updatedAt: Date.now(),
-    },
-    {
-      id: uuid(),
-      name: 'Brand B',
-      createdAt: Date.now(),
-      updatedAt: Date.now(),
-    },
-    {
-      id: uuid(),
-      name: 'Brand C',
-      createdAt: Date.now(),
-      updatedAt: Date.now(),
-    },
+    // {
+    //   id: uuid(),
+    //   name: 'Brand A',
+    //   createdAt: Date.now(),
+    //   updatedAt: Date.now(),
+    // },
+    // {
+    //   id: uuid(),
+    //   name: 'Brand B',
+    //   createdAt: Date.now(),
+    //   updatedAt: Date.now(),
+    // },
+    // {
+    //   id: uuid(),
+    //   name: 'Brand C',
+    //   createdAt: Date.now(),
+    //   updatedAt: Date.now(),
+    // },
   ];
 
   findAll() {
@@ -82,5 +82,9 @@ export class BrandService {
 
     this.brands = this.brands.filter((brand) => brand.id !== id);
     return { deleted: true };
+  }
+
+  fillBrandsWithSeedData(brands: Brand[]) {
+    this.brands = brands;
   }
 }
